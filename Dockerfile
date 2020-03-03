@@ -1,4 +1,4 @@
-FROM debian:buster-slim
+FROM google/cloud-sdk:282.0.0-slim
 
 ENV TERRAFORM_VERSION 0.12.21
 ENV TERRAGRUNT_VERSION=0.22.5
