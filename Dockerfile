@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     unzip \
     git \
     ca-certificates \
+    ssh-client \
     && rm -rf /var/lib/apt/lists/*
 
 RUN curl -fsLS https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -o /tmp/terraform.zip && unzip /tmp/terraform.zip terraform -d /bin && chmod + /bin/terraform
